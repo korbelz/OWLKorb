@@ -1,5 +1,5 @@
 params ["_display", "_tabIdx"];
-
+/*
 private _curIdc = _tabIdx * 1000;
 
 if (!isNull (_display displayCtrl _curIdc)) exitWith {};
@@ -60,4 +60,4 @@ _button ctrlAddEventHandler ["ButtonClick", {
 		(vehicle player) setDir _dir;
 		(vehicle player) setVelocityModelSpace [0,194,0];
 	};
-}];
+}];*/

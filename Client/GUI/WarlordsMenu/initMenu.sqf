@@ -20,7 +20,6 @@ OWL_MENU_TABS = [
 	"Strategy",
 	"Assets",
 	"Asset Management",
-	"Free Jets",
 	"Options"
 ];
 

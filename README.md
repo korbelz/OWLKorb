@@ -18,7 +18,12 @@ If you would like to see how the project is coming along, the test server is usu
 
 **Server Name**: [Warlords] Aircraft Practice
 
-The server has a tab for 'free jets' for fun while in development. Press 'U' to open the menu.
+Original Warlords Redux by Bohemia Interactive and Jezuro can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=Warlords+redux
+
+Offical Arma 3 Website: https://arma3.com/
+
+Offical Arma 3 discord: https://discord.gg/arma 
+
 
 # **TECHNICAL CHANGES**
 

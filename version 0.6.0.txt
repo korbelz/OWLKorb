@@ -9,3 +9,4 @@
 - Added Time acceleration
 - Initial weather system added
 - Requisition menu overhaul
+- Prep for fixed wing aircraft spawning on carriers

@@ -1,0 +1,2 @@
+0.6.0
+- added patch note/versioning file

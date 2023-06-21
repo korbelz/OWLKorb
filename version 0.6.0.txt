@@ -3,3 +3,4 @@
 - Full map overhaul/rebalance 
 - Removed debug sectors from map
 - Removed Free Jets debug system
+- updated system chat messages

@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2103;
+		nextID=2104;
 	};
 	class MarkerIDProvider
 	{
@@ -57,13 +57,14 @@ addons[]=
 	"A3_Structures_F_Naval_Piers",
 	"A3_Boat_F_EPC_Submarine_01",
 	"A3_Structures_F_Training",
-	"A3_Boat_F_Destroyer_Destroyer_01"
+	"A3_Boat_F_Destroyer_Destroyer_01",
+	"A3_Modules_F_Curator_Environment"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -187,6 +188,13 @@ class AddonsMetaData
 		{
 			className="A3_Boat_F_Destroyer";
 			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item18
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -351,8 +359,6 @@ class Mission
 		forecastWind=0;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		rainForced=1;
-		windForced=1;
 		year=2035;
 		month=6;
 		day=24;
@@ -363,7 +369,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=239;
+		items=240;
 		class Item0
 		{
 			dataType="Group";
@@ -9492,6 +9498,34 @@ class Mission
 			id=2102;
 			type="Logic";
 			atlOffset=0.13100052;
+		};
+		class Item239
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12693.363,88.683067,21329.758};
+			};
+			id=2103;
+			type="ModuleTimeMultiplier_F";
+			atlOffset=-7.6293945e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTimeMultiplier_F_TimeMultiplier";
+					expression="_this setVariable ['TimeMultiplier',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=4;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections

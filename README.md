@@ -18,6 +18,8 @@ If you would like to see how the project is coming along, the test server is usu
 
 **Server Name**: [Warlords] Aircraft Practice
 
+Ando's Open Warlords: https://github.com/aaannnndd/OWL
+
 Original Warlords Redux by Bohemia Interactive and Jezuro can be found here: https://steamcommunity.com/sharedfiles/filedetails/?id=1834482266&searchtext=Warlords+redux
 
 Offical Arma 3 Website: https://arma3.com/

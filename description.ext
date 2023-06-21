@@ -3,6 +3,10 @@
 #include "loadouts.hpp"
 #include "Client\GUI\uiComponents.inc"
 
+onLoadName = "Open Warlords"; 
+dev = "Ando + Korbelz";
+author = "Ando + Korbelz";
+
 //#include "multiplayerSecurity.hpp"
 
 allowFunctionsLog = 1;

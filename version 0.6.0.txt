@@ -8,3 +8,4 @@
 - Added randomized mission start time
 - Added Time acceleration
 - Initial weather system added
+- Requisition menu overhaul

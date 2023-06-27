@@ -363,22 +363,60 @@ OWL_fnc_crAircraftSpawn = {
 	if (_asset isKindOf "Plane" && !(_asset isKindOf "VTOL_Base_F")) then {
 		private _airportID = _sector getVariable "OWL_sectorAirportID";
 		if (_airportID == -1) exitWith {};
-		
-		//add wrapper here to manually spawn aircraft on top of carriers <--- maybe not see below
+		_aircraft = _asset; 
 		private _runwayInfo = OWL_airstrips # _airportID; 
-		switch (_runwayInfo) do
+
+		//case 6+ are for carriers and new airfields on altis
+		/*
+		Kavala = 6, AH
+		Bomos = 7, AH
+		South carrier = 8, AH
+		North naval base = 9, H
+		Kore Factory = 10, H
+		*/ 
+		switch (_airportID) do
 		{
-			case 7: 
+			case 6: 
 			{
-				//override runwayInfo params manually
+				_planePos = [3274.3, 12790.3, 27.6]; //TODO: build array of mutliple parkings spots, then pick a random one
+				_planeDir = 180; //TODO: Grab carrier direction and set _planeDir to 90 degree offset or towards center of carrier
+				_aircraft = createVehicle [_asset, _planePos, [], 0, "NONE"]; 
+				_aircraft setPosATL _planePos;   
+				_aircraft setDir _planeDir;   
+								  
+				_aircraft remoteExec ["OWL_fnc_srAircraftSpawn", _client];
+				[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
 			};
-				 
+
+			case 7:
+			{
+				_planePos = [2568.8, 21930.7, 28.5]; //TODO: build array of mutliple parkings spots, then pick a random one
+				_planeDir = 90; //TODO: Grab carrier direction and set _planeDir to 90 degree offset or towards center of carrier
+				_aircraft = createVehicle [_asset, _planePos, [], 0, "NONE"]; 
+				_aircraft setPosATL _planePos;   
+				_aircraft setDir _planeDir;   
+								  
+				_aircraft remoteExec ["OWL_fnc_srAircraftSpawn", _client];
+				[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
+			}; 
+
+			case 8:
+			{
+				_planePos = [16075, 5252.64, 205.6]; //TODO: build array of mutliple parkings spots, then pick a random one
+				_planeDir = 90; //TODO: Grab carrier direction and set _planeDir to 90 degree offset or towards center of carrier
+				_aircraft = createVehicle [_asset, _planePos, [], 0, "NONE"]; 
+				_aircraft setPosATL _planePos;   
+				_aircraft setDir _planeDir;   
+								  
+				_aircraft remoteExec ["OWL_fnc_srAircraftSpawn", _client];
+				[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
+			};
 			default 
 			{
 				_runwayInfo params ["_pos", "_planePos", "_planeDir"];  //<-- override these 3 for carriers <---case statement here? for new array
-				private _pilotClass = ["B_pilot_F", "O_pilot_F", "I_pilot_F"] # ([WEST, EAST, RESISTANCE] find (side group _player));   
-				private _pilot = (createGroup (side group _player)) createUnit [_pilotClass, [_planePos#0, _planePos#1, 0], [], 0, "NONE"];   
-				private _aircraft = createVehicle [_asset, _planePos, [], 0, "FLY"]; //<--- override this [_asset, _planePos, [], 0, "NONE"] <--if (_airportID < 6) statement here
+				_pilotClass = ["B_pilot_F", "O_pilot_F", "I_pilot_F"] # ([WEST, EAST, RESISTANCE] find (side group _player));   
+				_pilot = (createGroup (side group _player)) createUnit [_pilotClass, [_planePos#0, _planePos#1, 0], [], 0, "NONE"];   
+				_aircraft = createVehicle [_asset, _planePos, [], 0, "FLY"]; //<--- override this [_asset, _planePos, [], 0, "NONE"] <--if (_airportID < 6) statement here
 				_pilot assignAsDriver _aircraft;   
 				_pilot moveInDriver _aircraft;   
 		
@@ -391,22 +429,7 @@ OWL_fnc_crAircraftSpawn = {
 				[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
 			};
 		};
-		/*  
-		_runwayInfo params ["_pos", "_planePos", "_planeDir"];  //<-- override these 3 for carriers <---case statement here? for new array
-		private _pilotClass = ["B_pilot_F", "O_pilot_F", "I_pilot_F"] # ([WEST, EAST, RESISTANCE] find (side group _player));   
-		private _pilot = (createGroup (side group _player)) createUnit [_pilotClass, [_planePos#0, _planePos#1, 0], [], 0, "NONE"];   
-		private _aircraft = createVehicle [_asset, _planePos, [], 0, "FLY"]; //<--- override this [_asset, _planePos, [], 0, "NONE"] <--if (_airportID < 6) statement here
-		_pilot assignAsDriver _aircraft;   
-		_pilot moveInDriver _aircraft;   
 		
-		_aircraft setPosATL _planePos;   
-		_aircraft setDir _planeDir;   
-		_aircraft setVelocityModelSpace [0,150,0]; //might need to override this for carriers  
-		
-		_aircraft landAt _airportID; //might need to override this for carriers  
-		_aircraft remoteExec ["OWL_fnc_srAircraftSpawn", _client];
-		[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
-		*/
 		// So uglyyyyyyyy
 		_aircraft spawn {  
 			private _landed = false;  
@@ -447,6 +470,7 @@ OWL_fnc_crAircraftSpawn = {
 
 			while {!isNull _this && alive _this && !_landed} do { 
 				sleep 0.5; 
+				//TODO: rewrite this for carrier helipads
 				if ((getPosATL _this)#2 < 2) then {
 					private _pilot = effectiveCommander _this;
 					unassignVehicle _pilot;

@@ -13,3 +13,4 @@
 
 0.6.1
 - Added Redux weather system
+- Fixed wing aircraft can spawn on carriers

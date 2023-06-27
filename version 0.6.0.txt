@@ -10,3 +10,6 @@
 - Initial weather system added
 - Requisition menu overhaul
 - Prep for fixed wing aircraft spawning on carriers
+
+0.6.1
+- Added Redux weather system

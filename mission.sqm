@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=253;
+		nextID=254;
 	};
 	class Camera
 	{
@@ -58,8 +58,7 @@ addons[]=
 	"A3_Boat_F_EPC_Submarine_01",
 	"A3_Structures_F_Training",
 	"A3_Boat_F_Destroyer_Destroyer_01",
-	"A3_Modules_F_Curator_Environment",
-	"A3_Modules_F_Events"
+	"A3_Modules_F_Curator_Environment"
 };
 class AddonsMetaData
 {
@@ -370,7 +369,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=241;
+		items=240;
 		class Item0
 		{
 			dataType="Group";
@@ -9526,73 +9525,6 @@ class Mission
 					};
 				};
 				nAttributes=1;
-			};
-		};
-		class Item240
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={13183.422,73.587303,21339.18};
-			};
-			id=2104;
-			type="ModuleWeather_F";
-			atlOffset=-2.026001;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleWeather_F_Delay";
-					expression="_this setVariable ['Delay',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=600;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleWeather_F_Rain";
-					expression="_this setVariable ['Rain',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleWeather_F_Fog";
-					expression="_this setVariable ['Fog',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=-1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleWeather_F_Overcast";
-					expression="_this setVariable ['Overcast',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0.1;
-						};
-					};
-				};
-				nAttributes=4;
 			};
 		};
 	};

@@ -24,4 +24,5 @@
   - Helis are now compatible with naval assets
 - Improved all heliports on map for more predictable landing locations
 - Improvements to Nuke town for heli access
-- Initial work on UAVs   
+- Initial work on UAVs
+- Added basic Diver class/loadout to both teams   

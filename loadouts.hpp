@@ -476,6 +476,80 @@ class CfgRespawnInventory
 		uniformClass = "U_O_CombatUniform_ocamo";
 		backpack = "B_FieldPack_ocamo_AA";
 	};
+
+	class B_Diver
+	{
+		displayName = "Diver";
+		role = "AntiVehicleSpecialist";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa"; 
+		weapons[] = {
+			"arifle_SDAR_F",
+			"Laserdesignator"
+			
+		};
+		magazines[] = {
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag"
+		};
+		items[] = {
+			"FirstAidKit"
+		};
+		linkedItems[] = {
+			"V_RebreatherB",
+			"G_Diving",
+			"optic_Arco_blk_F",
+			"acc_pointer_IR",
+			"NVGoggles_OPFOR",
+			"B_UavTerminal",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_B_Wetsuit";
+		backpack = "B_FieldPack_blk";
+	};
+
+	class O_Diver
+	{
+		displayName = "Diver";
+		role = "AntiVehicleSpecialist";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa"; 
+		weapons[] = {
+			"arifle_SDAR_F",
+			"Laserdesignator"
+			
+		};
+		magazines[] = {
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag",
+			"20Rnd_556x45_UW_mag"
+		};
+		items[] = {
+			"FirstAidKit"
+		};
+		linkedItems[] = {
+			"V_RebreatherIR",
+			"G_Diving",
+			"optic_Arco_blk_F",
+			"acc_pointer_IR",
+			"NVGoggles_OPFOR",
+			"O_UavTerminal",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_O_Wetsuit";
+		backpack = "B_FieldPack_ocamo";
+	};
 };
 
 class CfgLoadoutCost
@@ -489,7 +563,7 @@ class CfgLoadoutCost
 			class B_Engineer 	{progress=100;	name="Engineer";		reqstr="Toolkit";	cost=200;	amount=5;	req[]={"Toolkit"};};
 			class B_AT 			{progress=100;	name="Anti-Tank";		reqstr="AT Launchers + Rocket";	cost=250;	amount=30;	req[]={"Vorona_HEAT","MRAWS_HE_F","MRAWS_HEAT55_F","MRAWS_HEAT_F","NLAW_F","RPG7_F","RPG32_HE_F","RPG32_F","Vorona_HE","Titan_AP","Titan_AT""launch_O_Vorona_brown_F","launch_O_Vorona_green_F","launch_MRAWS_green_rail_F","launch_MRAWS_olive_rail_F","launch_MRAWS_sand_rail_F","launch_MRAWS_green_F","launch_MRAWS_olive_F","launch_MRAWS_sand_F","launch_NLAW_F","launch_RPG32_green_F","launch_RPG32_F","launch_RPG32_ghex_F","launch_RPG7_F","launch_O_Titan_short_F","launch_O_Titan_short_ghex_F","launch_I_Titan_short_F","launch_B_Titan_short_F","launch_B_Titan_short_tna_F"};};
 			class B_AA 			{progress=100;	name="Anti-Air";		reqstr="AA Launchers + Rocket";	cost=250;	amount=30;	req[]={"launch_I_Titan_F","launch_I_Titan_eaf_F","launch_O_Titan_ghex_F","launch_O_Titan_F","launch_B_Titan_olive_F","launch_B_Titan_F","launch_B_Titan_tna_F","Titan_AAA"};};
-			class Arsenal		{progress=100;	name="*Arseal";		reqstr="";			cost=1000;	amount=0;	req[]={};};
+			class B_Diver		{progress=100;	name="Diver";		reqstr="Underwater gun";			cost=250;	amount=30;	req[]={};};
 		};
 		class EAST
 		{
@@ -498,7 +572,7 @@ class CfgLoadoutCost
 			class O_Engineer 	{progress=100;	name="Engineer";		reqstr="Toolkit";	cost=200;	amount=5;	req[]={"Toolkit"};};
 			class O_AT 			{progress=100;	name="Anti-Tank";		reqstr="AT Launchers + Rocket";	cost=250;	amount=30;	req[]={"Vorona_HEAT","MRAWS_HE_F","MRAWS_HEAT55_F","MRAWS_HEAT_F","NLAW_F","RPG7_F","RPG32_HE_F","RPG32_F","Vorona_HE","Titan_AP","Titan_AT""launch_O_Vorona_brown_F","launch_O_Vorona_green_F","launch_MRAWS_green_rail_F","launch_MRAWS_olive_rail_F","launch_MRAWS_sand_rail_F","launch_MRAWS_green_F","launch_MRAWS_olive_F","launch_MRAWS_sand_F","launch_NLAW_F","launch_RPG32_green_F","launch_RPG32_F","launch_RPG32_ghex_F","launch_RPG7_F","launch_O_Titan_short_F","launch_O_Titan_short_ghex_F","launch_I_Titan_short_F","launch_B_Titan_short_F","launch_B_Titan_short_tna_F"};};
 			class O_AA 			{progress=100;	name="Anti-Air";		reqstr="AA Launchers + Rocket";	cost=250;	amount=30;	req[]={"launch_I_Titan_F","launch_I_Titan_eaf_F","launch_O_Titan_ghex_F","launch_O_Titan_F","launch_B_Titan_olive_F","launch_B_Titan_F","launch_B_Titan_tna_F","Titan_AAA"};};
-			class Arsenal		{progress=100;	name="*Arseal";		reqstr="";			cost=1000;	amount=0;	req[]={};};
+			class O_Diver		{progress=100;	name="Diver";		reqstr="Underwater gun";			cost=250;	amount=30;	req[]={};};
 		};
 	};
 };

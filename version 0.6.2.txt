@@ -23,4 +23,5 @@
 - rewrote Heli/pilot landing code to be more robust
   - Helis are now compatible with naval assets
 - Improved all heliports on map for more predictable landing locations
-- Improvements to Nuke town for heli access   
+- Improvements to Nuke town for heli access
+- Initial work on UAVs   

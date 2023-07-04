@@ -64,6 +64,15 @@ class CfgWLRequisitionPresets
 				class B_Plane_Fighter_01_F			{cost = 13500;	requirements[]={"A"};	};	// "F/A-181 Black Wasp II";
 				class I_Plane_Fighter_04_F					{cost = 9000;	requirements[]={"A"};	};	// "A-149 Gryphon";
 				class I_Plane_Fighter_03_CAS_F				{cost = 7000;	requirements[]={"A"};	};	// "A-143 Buzzard";
+				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
+				//class B_T_UAV_03_dynamicLoadout_F			{cost = 8200;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
+				class B_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk AT";
+				class B_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk LGB";
+				//class B_UAV_02_dynamicLoadout_F				{cost = 8200;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "greyhawk Custom";
+				class B_UAV_05_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "UCAV";
+				class B_UAV_01_F							{cost = 2000;	requirements[]={"H"};	};	// "AR-2 Darter";
+				class B_UAV_06_F							{cost = 2000;	requirements[]={"H"};	};	// "AL-6 Pelican";
+				class B_UAV_06_medical_F					{cost = 2000;	requirements[]={"H"};	};	// "AL-6 Pelican medical";
 			};
 			class Naval
 			{
@@ -156,6 +165,16 @@ class CfgWLRequisitionPresets
 				class O_T_VTOL_02_infantry_dynamicLoadout_F	{cost = 10500;	requirements[]={"H"};	};	// "Y-32 Xi'an (Infantry Transport)"
 				class O_Plane_CAS_02_dynamicLoadout_F		{cost = 10500;	requirements[]={"A"};	};	// "To-199 Neophron (CAS)"
 				class O_Plane_Fighter_02_F			{cost = 13500;	requirements[]={"A"};	};	// "To-201 Shikra"
+				class B_T_UAV_03_F							{cost = 8000;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
+				//class B_T_UAV_03_dynamicLoadout_F			{cost = 8200;	requirements[]={"H"}; offset[]={0, 6, 0};};	// "Firescout";
+				class O_UAV_02_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 AT"
+				class O_UAV_02_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 LGB"
+				//class O_UAV_02_dynamicLoadout_F				{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "K40 Custom"
+				class O_T_UAV_04_CAS_F						{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0}; };	// "KH-3A CAS"
+				class B_UAV_05_F							{cost = 8000;	requirements[]={"A"}; offset[]={0, 6, 0};};	// "UCAV";
+				class O_UAV_01_F							{cost = 2000;	requirements[]={"H"};	};	// "AR-2 Darter";
+				class O_UAV_06_F							{cost = 2000;	requirements[]={"H"};	};	// "AL_6 Pelican"
+				class O_UAV_06_medical_F					{cost = 2000;	requirements[]={"H"};	};	// "AL_6 Pelican Medical"
 			};
 			class Naval
 			{

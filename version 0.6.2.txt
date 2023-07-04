@@ -14,3 +14,9 @@
 0.6.1
 - Added Redux weather system
 - Fixed wing aircraft can spawn on carriers
+
+0.6.2
+- 0.6.* map finalized
+    - Molos AF, Salt flats, Nuke town set to OPFOR
+    - Kavala, Bomos, USS Deathstar set to Bluefor
+    - Intermediate zone set back to Indy   

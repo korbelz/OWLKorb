@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=264;
+		nextID=265;
 	};
 	class Camera
 	{
@@ -1938,7 +1938,7 @@ class Mission
 			{
 				position[]={27001.301,20.504261,23176.699};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_molos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_molos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=480;
 			type="Logic";
 		};
@@ -2754,7 +2754,7 @@ class Mission
 			{
 				position[]={4611.46,296.43781,21405.6};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_oreokastro""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_oreokastro""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=544;
 			type="Logic";
 		};
@@ -2881,7 +2881,7 @@ class Mission
 			{
 				position[]={12294.9,123.95779,8883.8799};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_southern_base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_southern_base""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 10];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=554;
 			type="Logic";
 		};
@@ -2906,7 +2906,7 @@ class Mission
 			{
 				position[]={9055.8496,21.429234,11969.4};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_zaros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_zaros""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=556;
 			type="Logic";
 		};
@@ -2931,7 +2931,7 @@ class Mission
 			{
 				position[]={7403.3101,23.875874,12106.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_kavirida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_kavirida""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=558;
 			type="Logic";
 		};
@@ -2956,7 +2956,7 @@ class Mission
 			{
 				position[]={5098.1899,48.487015,11231.7};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_panochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_panochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=560;
 			type="Logic";
 		};
@@ -2981,7 +2981,7 @@ class Mission
 			{
 				position[]={4152.4302,52.214264,11734.3};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_neri""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_neri""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=562;
 			type="Logic";
 			atlOffset=-3.8146973e-006;
@@ -3036,7 +3036,7 @@ class Mission
 				position[]={3888.2471,22.88965,13783.187};
 				angles[]={6.1954126,0,0.061261058};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_aggelochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_aggelochori""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=566;
 			type="Logic";
 		};
@@ -3061,7 +3061,7 @@ class Mission
 			{
 				position[]={4228.0298,18.040001,15032.5};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_power_plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""W""]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_power_plant""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""W""]";
 			id=568;
 			type="Logic";
 		};
@@ -3086,7 +3086,7 @@ class Mission
 			{
 				position[]={4908.5098,77.782898,16137.8};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_negades""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_negades""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", """"]";
 			id=570;
 			type="Logic";
 		};
@@ -9355,7 +9355,7 @@ class Mission
 			{
 				position[]={23147.098,3.4060001,18681.275};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_saltflats""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 3];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AH""];" \n "this setVariable [""OWL_sectorParam_airportID"", 5];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_saltflats""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AH""];" \n "this setVariable [""OWL_sectorParam_airportID"", 5];";
 			id=2085;
 			type="Logic";
 			atlOffset=0.21600008;
@@ -9439,7 +9439,7 @@ class Mission
 				position[]={19348.984,0.23370361,22078.346};
 				angles[]={6.2595534,0,0.091053829};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_north_naval""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""HW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 9];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_north_naval""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""HW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 9];";
 			id=2095;
 			type="Logic";
 			atlOffset=152.05098;

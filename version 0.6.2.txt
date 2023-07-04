@@ -19,4 +19,6 @@
 - 0.6.* map finalized
     - Molos AF, Salt flats, Nuke town set to OPFOR
     - Kavala, Bomos, USS Deathstar set to Bluefor
-    - Intermediate zone set back to Indy   
+    - Intermediate zone set back to Indy 
+- rewrote Heli/pilot landing code to be more robust
+  - Helis are now compatible with naval assets   

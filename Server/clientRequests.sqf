@@ -364,7 +364,8 @@ OWL_fnc_crAircraftSpawn = {
 		private _airportID = _sector getVariable "OWL_sectorAirportID";
 		if (_airportID == -1) exitWith {};
 		_aircraft = _asset; 
-		private _runwayInfo = OWL_airstrips # _airportID; 
+		//if airportID > 6 else run this code
+		private _runwayInfo = OWL_airstrips # _airportID; //found in initcommon.sqf
 
 		//case 6+ are for carriers and new airfields on altis
 		/*
@@ -453,10 +454,24 @@ OWL_fnc_crAircraftSpawn = {
 	} else {
 		private _spawnPos = (getPosATL _sector) vectorAdd [random 150,random 150,100];
 		private _spawnDir = [_spawnPos, getPosATL _sector] call BIS_fnc_dirTo;
-		private _pilot = (createGroup (side group _player)) createUnit [_pilotClass, [_spawnPos#0, _spawnPos#1, 0], [], 0, "NONE"]; 
+		private _assetPilotGrp = createGroup side group _player;
+		private _pilot = _assetPilotGrp createUnit [typeOf _player, [100, 100, 0], [], 0, "NONE"];
+		//private _pilot = (createGroup (side group _player)) createUnit [_pilotClass, [_spawnPos#0, _spawnPos#1, 0], [], 0, "NONE"]; 
 		private _aircraft = createVehicle [_asset, _spawnPos, [], 0, "FLY"]; 
 		_pilot assignAsDriver _aircraft; 
-		_pilot moveInDriver _aircraft; 
+		_pilot moveInDriver _aircraft;
+		//Korb improvements
+		_pilot allowDamage FALSE;
+		_pilot forceAddUniform "U_VirtualMan_F";
+		_pilot setBehaviour "CARELESS";
+		_pilot setCombatMode "BLUE";
+		_pilot allowFleeing 0;
+
+		_assetPilotGrp deleteGroupWhenEmpty TRUE;
+
+		_wpGetOut = _assetPilotGrp addWaypoint [position _aircraft, 0];
+		_wpGetOut setWaypointType "GETOUT";
+		_wpGetOut setWaypointStatements ["TRUE", "deleteVehicle this"]; 
 		
 		_aircraft setPosATL _spawnPos; 
 		_aircraft setDir _spawnDir;
@@ -465,12 +480,12 @@ OWL_fnc_crAircraftSpawn = {
 		[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
 
 		_aircraft land "LAND";
-		_aircraft spawn {
+		/*_aircraft spawn {
 			private _landed = false;
 
 			while {!isNull _this && alive _this && !_landed} do { 
 				sleep 0.5; 
-				//TODO: rewrite this for carrier helipads
+				
 				if ((getPosATL _this)#2 < 2) then {
 					private _pilot = effectiveCommander _this;
 					unassignVehicle _pilot;
@@ -478,7 +493,7 @@ OWL_fnc_crAircraftSpawn = {
 					_landed = true;
 				}; 
 			};
-		};
+		};*/
 	};
 
 };

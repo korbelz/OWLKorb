@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2105;
+		nextID=2117;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2542.3584,25.123472,21935.834};
-		dir[]={0.88304472,-0.43677738,-0.17163196};
-		up[]={0.42875388,0.89956963,-0.083334252};
-		aside[]={-0.19079341,0,-0.98163021};
+		pos[]={19400.459,7.8219528,22121.609};
+		dir[]={0.35855728,-0.46778277,-0.80785906};
+		up[]={0.18979205,0.8838042,-0.427616};
+		aside[]={-0.91402328,2.5785266e-007,-0.40567806};
 	};
 };
 binarizationWanted=0;
@@ -369,7 +369,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=240;
+		items=250;
 		class Item0
 		{
 			dataType="Group";
@@ -8172,7 +8172,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={19404.834,1.2051315,22085.326};
+				position[]={19384.117,1.2050781,22077.396};
 			};
 			side="Empty";
 			class Attributes
@@ -8180,7 +8180,7 @@ class Mission
 			};
 			id=2041;
 			type="Land_HelipadEmpty_F";
-			atlOffset=159.52203;
+			atlOffset=157.3185;
 		};
 		class Item191
 		{
@@ -8222,7 +8222,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={19430.807,1.1156082,22036.893};
+				position[]={19429.416,0,22036.719};
 			};
 			side="Empty";
 			class Attributes
@@ -8232,7 +8232,7 @@ class Mission
 			};
 			id=2043;
 			type="Land_Destroyer_01_base_F";
-			atlOffset=163.16794;
+			atlOffset=161.91991;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8295,7 +8295,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={19431.006,10.254002,22112.512};
+				position[]={19429.586,9.2542114,22111.986};
 			};
 			side="Empty";
 			class Attributes
@@ -8303,7 +8303,7 @@ class Mission
 			};
 			id=2044;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.37778473;
+			atlOffset=0.49369144;
 		};
 		class Item194
 		{
@@ -9526,6 +9526,155 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item240
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11578.253,23.148712,11908.142};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2107;
+			type="Land_HelipadEmpty_F";
+			atlOffset=-0.0657444;
+		};
+		class Item241
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11632.432,23.076563,11962.22};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2108;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item242
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14190.378,20.717932,16182.551};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2109;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.095588684;
+		};
+		class Item243
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14222.034,19.360264,16243.358};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2110;
+			type="Land_HelipadEmpty_F";
+			atlOffset=-0.65618324;
+		};
+		class Item244
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20798.193,29.152771,7227.8198};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2111;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.029912949;
+		};
+		class Item245
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20813.07,28.369555,7259.5898};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2112;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.40917397;
+		};
+		class Item246
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23019.557,3.3575926,18833.215};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2113;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item247
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={23020.152,3.1900001,18787.809};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2114;
+			type="Land_HelipadEmpty_F";
+		};
+		class Item248
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26796.184,22.45842,24622.738};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2115;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.23836517;
+		};
+		class Item249
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26829.232,21.786097,24662.561};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2116;
+			type="Land_HelipadEmpty_F";
+			atlOffset=0.095676422;
 		};
 	};
 	class Connections

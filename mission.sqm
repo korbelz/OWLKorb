@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=274;
+		nextID=275;
 	};
 	class Camera
 	{
 		pos[]={19400.459,7.8219528,22121.609};
-		dir[]={0.35855728,-0.46778277,-0.80785906};
-		up[]={0.18979205,0.8838042,-0.427616};
-		aside[]={-0.91402328,2.5785266e-007,-0.40567806};
+		dir[]={0.35855395,-0.46777797,-0.80785078};
+		up[]={0.18976569,0.88384604,-0.42755729};
+		aside[]={-0.91401762,0,-0.4056747};
 	};
 };
 binarizationWanted=0;
@@ -1913,7 +1913,7 @@ class Mission
 			{
 				position[]={26993,21.985922,24662.801};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_molos_airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 15];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AH""];" \n "this setVariable [""OWL_sectorParam_assetCap"", [4,3,40]];" \n "this setVariable [""OWL_sectorParam_airportID"", 4];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_molos_airfield""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 100];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AH""];" \n "this setVariable [""OWL_sectorParam_assetCap"", [4,3,40]];" \n "this setVariable [""OWL_sectorParam_airportID"", 4];";
 			id=478;
 			type="Logic";
 		};
@@ -3009,7 +3009,7 @@ class Mission
 				position[]={3636.177,15.498836,12872.102};
 				angles[]={6.2595534,0,0.091053829};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_kavala""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AHW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 6];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_kavala""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 100];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AHW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 6];";
 			id=564;
 			type="Logic";
 			atlOffset=0.20200062;
@@ -9355,7 +9355,7 @@ class Mission
 			{
 				position[]={23147.098,3.4060001,18681.275};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_saltflats""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 20];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AH""];" \n "this setVariable [""OWL_sectorParam_airportID"", 5];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_saltflats""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 100];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AH""];" \n "this setVariable [""OWL_sectorParam_airportID"", 5];";
 			id=2085;
 			type="Logic";
 			atlOffset=0.21600008;
@@ -9383,7 +9383,7 @@ class Mission
 				position[]={2682.415,3.4007907,22093.766};
 				angles[]={6.2595534,0,0.091053829};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_Bomos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AHW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 7];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_Bomos""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 100];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AHW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 7];";
 			id=2091;
 			type="Logic";
 			atlOffset=0.56700039;
@@ -9411,7 +9411,7 @@ class Mission
 				position[]={16096.307,0.23402405,5200.1958};
 				angles[]={6.2595534,0,0.091053829};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_south_carrier""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AHW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 8];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_south_carrier""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 1];" \n "this setVariable [""OWL_sectorParam_income"", 100];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""AHW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 8];";
 			id=2093;
 			type="Logic";
 			atlOffset=176.207;
@@ -9439,7 +9439,7 @@ class Mission
 				position[]={19348.984,0.23370361,22078.346};
 				angles[]={6.2595534,0,0.091053829};
 			};
-			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_north_naval""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 25];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""HW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 9];";
+			init="this setVariable [""OWL_sectorParam_canBeBase"", 0];" \n "this setVariable [""OWL_sectorParam_name"", ""@STR_A3_OWL_sector_name_north_naval""];" \n "this setVariable [""OWL_sectorParam_useLocationName"", false];" \n "this setVariable [""OWL_sectorParam_side"", 2];" \n "this setVariable [""OWL_sectorParam_income"", 100];" \n "this setVariable [""OWL_sectorParam_fastTravelEnabled"", true];" \n "this setVariable [""OWL_sectorParam_borderSize"", 200]; " \n "this setVariable [""OWL_sectorParam_assetRequirements"", ""HW""];" \n "this setVariable [""OWL_sectorParam_airportID"", 9];";
 			id=2095;
 			type="Logic";
 			atlOffset=152.05098;

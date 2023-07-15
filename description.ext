@@ -7,6 +7,13 @@ onLoadName = "Open Warlords";
 dev = "Ando + Korbelz";
 author = "Ando + Korbelz";
 
+class Header
+{
+	gameType = Warlords;
+	minPlayers = 1;
+	maxPlayers = 10;
+};
+
 //#include "multiplayerSecurity.hpp"
 
 allowFunctionsLog = 1;
@@ -24,3 +31,4 @@ wreckRemovalMinTime = 120; //60
 wreckRemovalMaxTime = 240; //120
 
 //minPlayerDistance = WL_ASSET_REMOVAL_SAFEZONE;
+

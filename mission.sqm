@@ -8,22 +8,22 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2117;
+		nextID=2119;
 	};
 	class MarkerIDProvider
 	{
-		nextID=13;
+		nextID=15;
 	};
 	class LayerIndexProvider
 	{
-		nextID=275;
+		nextID=276;
 	};
 	class Camera
 	{
 		pos[]={19400.459,7.8219528,22121.609};
-		dir[]={0.35855395,-0.46777797,-0.80785078};
-		up[]={0.18976569,0.88384604,-0.42755729};
-		aside[]={-0.91401762,0,-0.4056747};
+		dir[]={0.3585543,-0.46777788,-0.80785066};
+		up[]={0.18976584,0.8838461,-0.42755714};
+		aside[]={-0.91401744,1.4901161e-008,-0.40567505};
 	};
 };
 binarizationWanted=0;
@@ -57,13 +57,14 @@ addons[]=
 	"A3_Structures_F_Naval_Piers",
 	"A3_Boat_F_EPC_Submarine_01",
 	"A3_Structures_F_Training",
-	"A3_Boat_F_Destroyer_Destroyer_01"
+	"A3_Boat_F_Destroyer_Destroyer_01",
+	"A3_Modules_F_Curator_Environment"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -190,7 +191,19 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item18
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
+};
+class DynamicSimulation
+{
+	enable=0;
+	saturateByObjectDistance=0;
 };
 dlcs[]=
 {
@@ -198,12 +211,6 @@ dlcs[]=
 	"Expansion",
 	"Heli",
 	"Jets"
-};
-
-class DynamicSimulation
-{
-	enable=0;
-	saturateByObjectDistance=0;
 };
 randomSeed=11332886;
 class ScenarioData
@@ -367,7 +374,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=250;
+		items=252;
 		class Item0
 		{
 			dataType="Group";
@@ -9673,6 +9680,30 @@ class Mission
 			id=2116;
 			type="Land_HelipadEmpty_F";
 			atlOffset=0.095676422;
+		};
+		class Item250
+		{
+			dataType="Marker";
+			position[]={13991.464,0.035,14401.705};
+			name="discord";
+			text="https://discord.gg/DQjYRMvv";
+			type="mil_box";
+			colorName="ColorOrange";
+			alpha=0.30308321;
+			id=2117;
+			atlOffset=60.544125;
+		};
+		class Item251
+		{
+			dataType="Marker";
+			position[]={13995.007,-0.15700001,13756.69};
+			name="github";
+			text="https://github.com/korbelz/OWLKorb";
+			type="mil_triangle";
+			colorName="ColorOrange";
+			alpha=0.30476618;
+			id=2118;
+			atlOffset=32.329578;
 		};
 	};
 	class Connections

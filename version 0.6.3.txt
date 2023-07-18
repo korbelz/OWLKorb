@@ -31,3 +31,4 @@
 - Increased starting CP/Min to help testing
   - Bluefor zones: Kavala, Bomos, and USS Deathstar
   - OPFOR zones: Molos AF, Salt Flats, and Nuke Town
+- Added Bobcat to bluefor

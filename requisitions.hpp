@@ -40,6 +40,7 @@ class CfgWLRequisitionPresets
 				class B_Truck_01_Repair_F			{cost = 1250;	requirements[]={};	};	// "HEMTT Repair"
 				class B_G_Offroad_01_repair_F			{cost = 1250;	requirements[]={};	};	// "Repair car"
 				class B_Truck_01_ammo_F				{cost = 1250;	requirements[]={};	};	// "HEMTT Ammo"
+				class B_APC_Tracked_01_CRV_F			{cost = 2500;	requirements[]={};	};	// "CRV-6e Bobcat"
 				class B_MRAP_01_hmg_F				{cost = 1400;	requirements[]={};	};	// "Hunter HMG"
 				class B_MRAP_01_gmg_F				{cost = 1600;	requirements[]={};	};	// "Hunter GMG"
 				class I_LT_01_AA_F							{cost = 2500;	requirements[]={};	};	// "AWC 302 Nyx (AA)"

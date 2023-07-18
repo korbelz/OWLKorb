@@ -32,5 +32,11 @@
   - Bluefor zones: Kavala, Bomos, and USS Deathstar
   - OPFOR zones: Molos AF, Salt Flats, and Nuke Town
 - Added Bobcat to bluefor
-- Rotary Wing UAVs working
+- Cross faction rotary wing UAV/UCAVs working; Requires Anti-Air loadout for UAV terminal access 
 - Added toggles for rotary wing radar, IR, and man sensors
+- Cross faction fixed wing UAV/UCAVs working; Requires Anti-Air loadout for UAV terminal access
+- Added toggles for Fixed wing radar, IR, and man sensors
+- Cross faction defense items working(CIWS, etc); Requires Anti-Air loadout for UAV terminal access
+- Added toggle for defense IR sensors
+- Added all naval weapons to both teams(CIWS, etc)
+- Added KV-44 Blackfish tanker aircraft

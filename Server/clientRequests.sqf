@@ -315,6 +315,21 @@ OWL_fnc_crDeployDefense = {
 
 	_defense remoteExec ["OWL_fnc_srDeployDefense", _client];
 	[_client, [_defense], []] call OWL_fnc_completeAssetPurchase;
+
+	if (KORB_DEFENSE_IR_ACTIVE == 1) then {
+		_defense disableTIEquipment true;
+	};
+
+	if (getNumber (configFile >> "CfgVehicles" >> _asset >> "isUav") == 1 && side _player == WEST) then {
+		createVehicleCrew _defense;
+		"You must unlock UAV and equip the Anti-Air loadout to fly it" remoteExec ["systemChat"];
+	};
+	if (getNumber (configFile >> "CfgVehicles" >> _asset >> "isUav") == 1 && side _player == EAST) then {
+		createVehicleCrew _defense;
+		_assetUavGrp = createGroup EAST;
+		[driver _defense, gunner _defense] joinSilent _assetUavGrp;
+		"You must unlock UAV and equip the Anti-Air loadout to fly it" remoteExec ["systemChat"];			
+	};
 };
 
 // Requests to magically appear a boat in the water
@@ -453,6 +468,26 @@ OWL_fnc_crAircraftSpawn = {
 				};
 			};   
 		};
+		if (KORB_AIR_RADAR_ACTIVE == 1) then {
+			_aircraft enableVehicleSensor ["ActiveRadarSensorComponent", false];
+			_aircraft enableVehicleSensor ["PassiveRadarSensorComponent", false];
+		};
+		if (KORB_JET_IR_ACTIVE == 1) then {
+			_aircraft disableTIEquipment true;
+		}; 
+
+		if (KORB_UAV_MAN_SENSOR_ACTIVE == 1) then {
+			_aircraft enableVehicleSensor ["manSensorComponent", false];
+		};
+
+		if (getNumber (configFile >> "CfgVehicles" >> _asset >> "isUav") == 1 && side _player == WEST) then {
+			createVehicleCrew _aircraft;
+		};
+		if (getNumber (configFile >> "CfgVehicles" >> _asset >> "isUav") == 1 && side _player == EAST) then {
+			createVehicleCrew _aircraft;
+			_assetUavGrp = createGroup EAST;
+			[driver _aircraft, gunner _aircraft] joinSilent _assetUavGrp;
+		};
 	} else {
 		private _spawnPos = (getPosATL _sector) vectorAdd [random 150,random 150,100];
 		private _spawnDir = [_spawnPos, getPosATL _sector] call BIS_fnc_dirTo;
@@ -515,22 +550,24 @@ OWL_fnc_crAircraftSpawn = {
 			[driver _aircraft, gunner _aircraft] joinSilent _assetUavGrp;
 			"You must unlock UAV and equip the Anti-Air loadout to fly it" remoteExec ["systemChat"];			
 		};
-		/*_aircraft spawn {
+
+		
+		_aircraft spawn {
 			private _landed = false;
-
 			while {!isNull _this && alive _this && !_landed} do { 
-				sleep 0.5; 
-				
+				sleep 3; 
+				//TODO: rewrite this to work with carriers becaues while loop will run forever, add maxtime check?
 				if ((getPosATL _this)#2 < 2) then {
-					private _pilot = effectiveCommander _this;
-					unassignVehicle _pilot;
-					[_pilot] orderGetIn false;
 					_landed = true;
-				}; 
+					//KV-44 blackfish code, only works on land airports
+					if (typeof _this == "B_T_VTOL_01_infantry_olive_F") then {
+						private _refuelbox = "B_Slingload_01_Fuel_F" createVehicle position player;
+						_refuelbox attachTo [_this, [0, -7.5, -4.5]];
+					};
+				};
 			};
-		};*/
+		};
 	};
-
 };
 
 // Request to have class '_asset' deployed with them flying in it

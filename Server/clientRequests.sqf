@@ -8,6 +8,8 @@
 ***********			Initialization			***********
 ******************************************************/
 
+#include "..\owl_constants.hpp"
+
 OWL_fnc_ICS = {
 	private _client = remoteExecutedOwner;
 	private _player = _client call OWL_fnc_getPlayerFromOwnerId;
@@ -458,6 +460,17 @@ OWL_fnc_crAircraftSpawn = {
 		private _pilot = _assetPilotGrp createUnit [typeOf _player, [100, 100, 0], [], 0, "NONE"];
 		//private _pilot = (createGroup (side group _player)) createUnit [_pilotClass, [_spawnPos#0, _spawnPos#1, 0], [], 0, "NONE"]; 
 		private _aircraft = createVehicle [_asset, _spawnPos, [], 0, "FLY"]; 
+		/*
+		if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == WEST) then {
+			createVehicleCrew _aircraft;
+			"You must unlock UAV and equip the Anti-Air loadout to fly it" remoteExec ["systemChat"];
+		};
+		if (getNumber (configFile >> "CfgVehicles" >> _className >> "isUav") == 1 && side _sender == EAST) then {
+			createVehicleCrew _aircraft;
+			_assetUavGrp = createGroup EAST;
+			[driver _aircraft, gunner _aircraft] joinSilent _assetUavGrp;
+			"You must unlock UAV and equip the Anti-Air loadout to fly it" remoteExec ["systemChat"];			
+		};*/
 		_pilot assignAsDriver _aircraft; 
 		_pilot moveInDriver _aircraft;
 		//Korb improvements
@@ -480,6 +493,28 @@ OWL_fnc_crAircraftSpawn = {
 		[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
 
 		_aircraft land "LAND";
+
+		if (KORB_HELI_IR_ACTIVE == 1) then {
+			_aircraft disableTIEquipment true;
+		};
+		if (KORB_HELI_RADAR_ACTIVE == 1) then {
+			_aircraft enableVehicleSensor ["ActiveRadarSensorComponent", false];
+			_aircraft enableVehicleSensor ["PassiveRadarSensorComponent", false];
+		};
+		if (KORB_UAV_MAN_SENSOR_ACTIVE == 1) then {
+			_aircraft enableVehicleSensor ["manSensorComponent", false];
+		};
+
+		if (getNumber (configFile >> "CfgVehicles" >> _asset >> "isUav") == 1 && side _player == WEST) then {
+			createVehicleCrew _aircraft;
+			"You must unlock UAV and equip the Anti-Air loadout to fly it" remoteExec ["systemChat"];
+		};
+		if (getNumber (configFile >> "CfgVehicles" >> _asset >> "isUav") == 1 && side _player == EAST) then {
+			createVehicleCrew _aircraft;
+			_assetUavGrp = createGroup EAST;
+			[driver _aircraft, gunner _aircraft] joinSilent _assetUavGrp;
+			"You must unlock UAV and equip the Anti-Air loadout to fly it" remoteExec ["systemChat"];			
+		};
 		/*_aircraft spawn {
 			private _landed = false;
 

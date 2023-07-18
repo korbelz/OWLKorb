@@ -16,7 +16,7 @@ If you would like to see how the project is coming along, the test server is usu
 
 **Server Info**: 160.202.167.19:2542
 
-**Server Name**: [Warlords] Aircraft Practice
+**Server Name**: Open Warlords
 
 Ando's Open Warlords: https://github.com/aaannnndd/OWL
 
@@ -25,6 +25,8 @@ Original Warlords Redux by Bohemia Interactive and Jezuro can be found here: htt
 Offical Arma 3 Website: https://arma3.com/
 
 Offical Arma 3 discord: https://discord.gg/arma 
+
+All development is done live on youtube. You can see the playlist here: https://www.youtube.com/playlist?list=PLCaYbxUNEJMEQ4HLAgjv0I0lRKfhZinGG
 
 
 # **TECHNICAL CHANGES**

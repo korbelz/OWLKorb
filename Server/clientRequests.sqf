@@ -381,10 +381,10 @@ OWL_fnc_crAircraftSpawn = {
 		private _airportID = _sector getVariable "OWL_sectorAirportID";
 		if (_airportID == -1) exitWith {};
 		_aircraft = _asset; 
-		//if airportID > 6 else run this code, this is to stop a divide by zero error with carriers
-		if (_airportID == 1 || _airportID == 2 || _airportID == 3 || _airportID == 4 || _airportID == 5 ) then {
+		//if airportID < 6 else run this code, this is to stop a divide by zero error with carriers
+		if (_airportID < 6 ) then {
 			private _runwayInfo = OWL_airstrips # _airportID; //found in initcommon.sqf
-			//systemChat format ["current airportID is %1", _airportID];
+			systemChat format ["current airportID is %1", _airportID];
 		}; 
 		//case 6+ are for carriers and new airfields on altis
 		/*

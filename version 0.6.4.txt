@@ -49,3 +49,4 @@
   - Dynamic mission name, server name and directs player to correct discord based on server that mission is run on.
 - Added adaptive info markers on map. Dynamic mission name, discord links(based on server), and bug reporting link(based on mission) 
 - Prep work for Dynamic welcome screen
+- hotfix: improved carrier code

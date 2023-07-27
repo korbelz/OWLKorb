@@ -40,3 +40,7 @@
 - Added toggle for defense IR sensors
 - Added all naval weapons to both teams(CIWS, etc)
 - Added KV-44 Blackfish tanker aircraft
+
+0.6.4
+- Refactored aircraft and heli parking spots on aircraft carriers for better deconfliction
+    - Each carrier has 3 unique fixed wing and 3 unique helipads, with more easily added  

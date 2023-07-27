@@ -84,6 +84,7 @@ call compileFinal preprocessFileLineNumbers "Client\GUI\initGUI.sqf";
 
 call compileFinal preprocessFileLineNumbers "Client\clientEventHandlers.sqf";
 call compileFinal preprocessFileLineNumbers "Client\initPlayerTracking.sqf";
+call compileFinal preprocessFileLineNumbers "Client\welcome.sqf";
 
 ["Client initialization finished"] call OWL_fnc_log;
 
@@ -95,7 +96,7 @@ call compileFinal preprocessFileLineNumbers "Client\initPlayerTracking.sqf";
 	systemChat "Work in Progress.";
 };
 
-
+//call welcome; 
 
 /*
 https://community.bistudio.com/wiki/inputAction

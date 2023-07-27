@@ -44,4 +44,6 @@
 0.6.4
 - Refactored aircraft and heli parking spots on aircraft carriers for better deconfliction
     - Each carrier has 3 unique fixed wing and 3 unique helipads, with more easily added 
-- Fixed Divide by zero error in logs for carriers 
+- Fixed Divide by zero error in logs for carriers
+- Added adpative MOTD style message to the mission to help players with bug reporting
+  - Dynamic mission name, server name and directs player to correct discord based on server that mission is run on. 

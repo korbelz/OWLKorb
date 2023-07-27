@@ -6,6 +6,22 @@ params ["_sector"];
 
 // TODO: Put these into config .hpp files + create for alternate side compositions
 
+_serverdiscord = serverName; 
+switch (_serverdiscord) do
+{ 
+	case "Open Warlords":
+	{
+    	_serverdiscord = "https://discord.gg/DQjYRMvv"; 
+	};
+	case default 
+	{
+		_serverdiscord = "discord.gg/arma3";
+	};
+
+};
+systemChat format ["Current mission is %1 on server %2 ,  **Discord is %3**", missionName, serverName, _serverdiscord ];
+diag_log format ["Current mission is %1 on server %2", missionName, serverName];
+
 OWL_genericSquad = [
 	"I_Soldier_LAT2_F",
 	"I_Soldier_AR_F",

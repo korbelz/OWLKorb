@@ -6,12 +6,13 @@ params ["_sector"];
 
 // TODO: Put these into config .hpp files + create for alternate side compositions
 
+//add server discord to this list to have it auto populate
 _serverdiscord = serverName; 
 switch (_serverdiscord) do
 { 
 	case "Open Warlords":
 	{
-    	_serverdiscord = "https://discord.gg/DQjYRMvv"; 
+    	_serverdiscord = "https://discord.gg/SBGrYUpvba"; 
 	};
 	case default 
 	{

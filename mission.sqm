@@ -8,7 +8,7 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=2119;
+		nextID=2120;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=325;
+		nextID=334;
 	};
 	class Camera
 	{
@@ -374,7 +374,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=249;
+		items=247;
 		class Item0
 		{
 			dataType="Group";
@@ -9634,30 +9634,6 @@ class Mission
 			id=2116;
 			type="Land_HelipadEmpty_F";
 			atlOffset=0.095676422;
-		};
-		class Item247
-		{
-			dataType="Marker";
-			position[]={13991.464,0.035,14401.705};
-			name="discord";
-			text="https://discord.gg/DQjYRMvv";
-			type="mil_box";
-			colorName="ColorOrange";
-			alpha=0.30308321;
-			id=2117;
-			atlOffset=60.544125;
-		};
-		class Item248
-		{
-			dataType="Marker";
-			position[]={13995.007,-0.15700001,13756.69};
-			name="github";
-			text="https://github.com/korbelz/OWLKorb";
-			type="mil_triangle";
-			colorName="ColorOrange";
-			alpha=0.30476618;
-			id=2118;
-			atlOffset=32.329578;
 		};
 	};
 	class Connections

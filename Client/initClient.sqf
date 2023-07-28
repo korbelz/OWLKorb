@@ -96,7 +96,13 @@ call compileFinal preprocessFileLineNumbers "Client\initPlayerTracking.sqf";
 	systemChat "Work in Progress.";
 };
 
-
+//UAV terminal code by MrThomasM
+player addEventHandler ["Killed", {
+	_connectedUAV = getConnectedUAV player;
+	if (_connectedUAV != objNull) exitWith {
+		player connectTerminalToUAV objNull;
+	};
+}];
 /*
 https://community.bistudio.com/wiki/inputAction
 https://community.bistudio.com/wiki/inputAction/actions

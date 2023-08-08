@@ -56,3 +56,5 @@
 - Added Heavy AT loadout and Sniper loadout
 - Dynamic markers now default to a visable area on the map when a specific location is not defined
 - Fixed wing aircraft now spawn facing the center of the aircraft carrier
+- Fixed wing aircraft spawning is map agnostic, parking spots are picked in relation to the carrier object
+  -- this is a WIP system

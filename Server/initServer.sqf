@@ -103,9 +103,28 @@ OWL_gameHandle = 0 spawn {
 
 
 //dynamic map marker system
+//mission name marker
+_markeroneloc = [];
+_markertwoloc = [];
+_markerthreeloc = [];
+_worldname = worldName;  
+switch (_worldname) do
+{ 
+	case "Altis":
+	{
+    	_markeroneloc = [13998.892,14819.831,0]; 
+		_markertwoloc = [13991.464,14401.705,0];
+		_markerthreeloc = [13995.007,13756.69,0]; 
+	};
+	case default 
+	{
+		_markeroneloc = [(worldSize / 2), ((worldSize / 2) + 200), 0];
+		_markertwoloc = [(worldSize / 2), (worldSize / 2), 0];
+		_markerthreeloc = [(worldSize / 2), ((worldSize / 2) - 200), 0];
+	};
 
-
-_markerone = createMarker ["markerone", [13998.892,14819.831,0]]; // Not visible yet.
+};
+_markerone = createMarker ["markerone", _markeroneloc]; // Not visible yet.
 _markerone setMarkerType "mil_marker"; // Visible.
 _markerone setMarkerColor "ColorOrange";
 _markerone setMarkerAlpha 0.30;
@@ -125,7 +144,9 @@ switch (_serverdiscord) do
 	};
 
 };
-_markertwo = createMarker ["markertwo", [13991.464,14401.705,0]]; // Not visible yet.
+//server name marker
+
+_markertwo = createMarker ["markertwo", _markertwoloc]; // Not visible yet.
 _markertwo setMarkerType "mil_box"; // Visible.
 _markertwo setMarkerColor "ColorOrange";
 _markertwo setMarkerAlpha 0.30;
@@ -156,7 +177,9 @@ switch (_buglink) do
 	};
 
 };
-_markerthree = createMarker ["markerthree", [13995.007,13756.69,0]]; // Not visible yet.
+//bug reporting marker
+
+_markerthree = createMarker ["markerthree", _markerthreeloc]; // Not visible yet.
 _markerthree  setMarkerType "mil_triangle"; // Visible.
 _markerthree  setMarkerColor "ColorOrange";
 _markerthree  setMarkerAlpha 0.30;

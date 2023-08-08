@@ -54,3 +54,4 @@
 
 0.7.1
 - Added Heavy AT loadout and Sniper loadout
+- Dynamic markers now default to a visable area on the map when a specific location is not defined

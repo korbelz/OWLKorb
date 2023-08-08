@@ -51,3 +51,6 @@
 - Prep work for Dynamic welcome screen
 - hotfix: improved carrier code
 - hotfix: players can reconnect to UAVs after death, code by MrThomas
+
+0.7.1
+- Added Heavy AT loadout and Sniper loadout

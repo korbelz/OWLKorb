@@ -550,6 +550,191 @@ class CfgRespawnInventory
 		uniformClass = "U_O_Wetsuit";
 		backpack = "B_FieldPack_ocamo";
 	};
+
+	class B_HAT
+	{
+		displayName = "Anti Tank";
+		role = "AntiVehicleSpecialist";		
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa";
+		weapons[] = {
+			"arifle_MX_F",
+			"Binocular",
+			"launch_I_Titan_short_F",
+			"hgun_P07_F"
+		};
+		magazines[] = {
+			"SmokeShell",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag",
+			"30Rnd_65x39_caseless_mag",
+			"Titan_AT",
+			"Titan_AT",
+			"Titan_AT"
+			
+		};
+		items[] = {
+			"FirstAidKit"
+		};
+		linkedItems[] = {
+			"V_PlateCarrier2_rgr",
+			"H_HelmetB_sand",
+			"optic_Hamr",
+			"acc_pointer_IR",
+			"NVGoggles",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_B_CombatUniform_mcam";
+		backpack = "B_FieldPack_khk";
+	};
+	
+	class O_HAT
+	{
+		displayName = "Anti Tank";
+		role = "AntiVehicleSpecialist";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa"; 
+		weapons[] = {
+			"arifle_Katiba_F",
+			"Binocular",
+			"launch_B_Titan_short_F",
+			"hgun_Rook40_F"
+		};
+		magazines[] = {
+			"SmokeShell",
+			"SmokeShell",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"30Rnd_65x39_caseless_green",
+			"Titan_AT",
+			"Titan_AT",
+			"Titan_AT"
+		};
+		items[] = {
+			"FirstAidKit"
+		};
+		linkedItems[] = {
+			"V_TacVest_khk",
+			"H_HelmetO_ocamo",
+			"optic_Arco_blk_F",
+			"acc_pointer_IR",
+			"NVGoggles_OPFOR",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_O_CombatUniform_ocamo";
+		backpack = "B_FieldPack_cbr";
+	};
+
+	class B_Sniper // Class of the respawn inventory, used by BIS_fnc_addRespawnInventory
+	{
+		displayName = "Sniper"; // Name of the respawn inventory
+		role = "Sniper"; // Role the respawn inventory is assigned to
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa"; // Icon shown next to the role
+		weapons[] = {
+			"srifle_LRR_F",
+			"Laserdesignator",
+			"hgun_P07_F"
+		};
+		magazines[] = {
+			"SmokeShell",
+			"SmokeShell",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		items[] = { // Useable items
+			"FirstAidKit"
+		};
+		linkedItems[] = {
+			"V_PlateCarrierGL_rgr",
+			"H_HelmetB_desert",
+			"optic_LRPS",
+			"acc_pointer_IR",
+			"NVGoggles",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_B_FullGhillie_ard";
+		backpack = "B_FieldPack_khk";
+	};
+	
+	class O_Sniper
+	{
+		displayName = "Sniper"; 
+		role = "Sniper";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManLeader_ca.paa"; 
+		weapons[] = {
+			"srifle_LRR_F",
+			"Laserdesignator",
+			"hgun_Rook40_F"
+		};
+		magazines[] = {
+			"SmokeShell",
+			"SmokeShell",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"16Rnd_9x21_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"7Rnd_408_Mag",
+			"HandGrenade",
+			"HandGrenade"
+		};
+		items[] = {
+			"FirstAidKit"
+		};
+		linkedItems[] = {
+			"V_TacVest_khk",
+			"H_HelmetLeaderO_ocamo",
+			"optic_LRPS",
+			"acc_pointer_IR",
+			"NVGoggles_OPFOR",
+			"ItemGPS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass = "U_O_FullGhillie_ard";
+		backpack = "B_FieldPack_cbr";
+	};
 };
 
 class CfgLoadoutCost
@@ -564,6 +749,8 @@ class CfgLoadoutCost
 			class B_AT 			{progress=100;	name="Anti-Tank";		reqstr="AT Launchers + Rocket";	cost=250;	amount=30;	req[]={"Vorona_HEAT","MRAWS_HE_F","MRAWS_HEAT55_F","MRAWS_HEAT_F","NLAW_F","RPG7_F","RPG32_HE_F","RPG32_F","Vorona_HE","Titan_AP","Titan_AT""launch_O_Vorona_brown_F","launch_O_Vorona_green_F","launch_MRAWS_green_rail_F","launch_MRAWS_olive_rail_F","launch_MRAWS_sand_rail_F","launch_MRAWS_green_F","launch_MRAWS_olive_F","launch_MRAWS_sand_F","launch_NLAW_F","launch_RPG32_green_F","launch_RPG32_F","launch_RPG32_ghex_F","launch_RPG7_F","launch_O_Titan_short_F","launch_O_Titan_short_ghex_F","launch_I_Titan_short_F","launch_B_Titan_short_F","launch_B_Titan_short_tna_F"};};
 			class B_AA 			{progress=100;	name="Anti-Air";		reqstr="AA Launchers + Rocket";	cost=250;	amount=30;	req[]={"launch_I_Titan_F","launch_I_Titan_eaf_F","launch_O_Titan_ghex_F","launch_O_Titan_F","launch_B_Titan_olive_F","launch_B_Titan_F","launch_B_Titan_tna_F","Titan_AAA"};};
 			class B_Diver		{progress=100;	name="Diver";		reqstr="Underwater gun";			cost=250;	amount=30;	req[]={};};
+			class B_HAT 			{progress=100;	name="Heavy AT";		reqstr="AT Launchers + Rocket";	cost=250;	amount=30;	req[]={"Vorona_HEAT","MRAWS_HE_F","MRAWS_HEAT55_F","MRAWS_HEAT_F","NLAW_F","RPG7_F","RPG32_HE_F","RPG32_F","Vorona_HE","Titan_AP","Titan_AT""launch_O_Vorona_brown_F","launch_O_Vorona_green_F","launch_MRAWS_green_rail_F","launch_MRAWS_olive_rail_F","launch_MRAWS_sand_rail_F","launch_MRAWS_green_F","launch_MRAWS_olive_F","launch_MRAWS_sand_F","launch_NLAW_F","launch_RPG32_green_F","launch_RPG32_F","launch_RPG32_ghex_F","launch_RPG7_F","launch_O_Titan_short_F","launch_O_Titan_short_ghex_F","launch_I_Titan_short_F","launch_B_Titan_short_F","launch_B_Titan_short_tna_F"};};
+			class B_Sniper {progress=100;	name="Sniper";	reqstr="";	cost=250;	amount=0;	req[]={};};
 		};
 		class EAST
 		{
@@ -573,6 +760,8 @@ class CfgLoadoutCost
 			class O_AT 			{progress=100;	name="Anti-Tank";		reqstr="AT Launchers + Rocket";	cost=250;	amount=30;	req[]={"Vorona_HEAT","MRAWS_HE_F","MRAWS_HEAT55_F","MRAWS_HEAT_F","NLAW_F","RPG7_F","RPG32_HE_F","RPG32_F","Vorona_HE","Titan_AP","Titan_AT""launch_O_Vorona_brown_F","launch_O_Vorona_green_F","launch_MRAWS_green_rail_F","launch_MRAWS_olive_rail_F","launch_MRAWS_sand_rail_F","launch_MRAWS_green_F","launch_MRAWS_olive_F","launch_MRAWS_sand_F","launch_NLAW_F","launch_RPG32_green_F","launch_RPG32_F","launch_RPG32_ghex_F","launch_RPG7_F","launch_O_Titan_short_F","launch_O_Titan_short_ghex_F","launch_I_Titan_short_F","launch_B_Titan_short_F","launch_B_Titan_short_tna_F"};};
 			class O_AA 			{progress=100;	name="Anti-Air";		reqstr="AA Launchers + Rocket";	cost=250;	amount=30;	req[]={"launch_I_Titan_F","launch_I_Titan_eaf_F","launch_O_Titan_ghex_F","launch_O_Titan_F","launch_B_Titan_olive_F","launch_B_Titan_F","launch_B_Titan_tna_F","Titan_AAA"};};
 			class O_Diver		{progress=100;	name="Diver";		reqstr="Underwater gun";			cost=250;	amount=30;	req[]={};};
+			class O_HAT 			{progress=100;	name="Heavy AT";		reqstr="AT Launchers + Rocket";	cost=250;	amount=30;	req[]={"Vorona_HEAT","MRAWS_HE_F","MRAWS_HEAT55_F","MRAWS_HEAT_F","NLAW_F","RPG7_F","RPG32_HE_F","RPG32_F","Vorona_HE","Titan_AP","Titan_AT""launch_O_Vorona_brown_F","launch_O_Vorona_green_F","launch_MRAWS_green_rail_F","launch_MRAWS_olive_rail_F","launch_MRAWS_sand_rail_F","launch_MRAWS_green_F","launch_MRAWS_olive_F","launch_MRAWS_sand_F","launch_NLAW_F","launch_RPG32_green_F","launch_RPG32_F","launch_RPG32_ghex_F","launch_RPG7_F","launch_O_Titan_short_F","launch_O_Titan_short_ghex_F","launch_I_Titan_short_F","launch_B_Titan_short_F","launch_B_Titan_short_tna_F"};};
+			class O_Sniper {progress=100;	name="Sniper";	reqstr="";	cost=250;	amount=0;	req[]={};};
 		};
 	};
 };

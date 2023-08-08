@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=348;
+		nextID=356;
 	};
 	class Camera
 	{
@@ -7723,19 +7723,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={16064.701,0,5173.0171};
+				position[]={16064.701,0.00042724609,5173.0171};
 				angles[]={0,0.51415652,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectScale 2.0";
+				name="carriereight";
 				createAsLocalObject=1;
 				disableSimulation=1;
 			};
 			id=2018;
 			type="Land_Carrier_01_base_F";
-			atlOffset=178.21857;
+			atlOffset=178.21899;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7926,7 +7926,7 @@ class Mission
 			};
 			id=2027;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.36483574;
+			atlOffset=0.36440849;
 		};
 		class Item182
 		{
@@ -7941,7 +7941,7 @@ class Mission
 			};
 			id=2028;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.2983284;
+			atlOffset=0.29790115;
 		};
 		class Item183
 		{
@@ -8622,19 +8622,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2561.7402,-6.9049072,21852.838};
+				position[]={2561.74,-6.9052057,21852.838};
 				angles[]={0,0.51415652,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				init="this setObjectScale 2.0";
+				name="carrierseven";
 				createAsLocalObject=1;
 				disableSimulation=1;
 			};
 			id=2054;
 			type="Land_Carrier_01_base_F";
-			atlOffset=8.0972729;
+			atlOffset=8.0970001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -8810,7 +8810,7 @@ class Mission
 			};
 			id=2059;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.16987801;
+			atlOffset=0.17017746;
 		};
 		class Item208
 		{
@@ -8825,7 +8825,7 @@ class Mission
 			};
 			id=2061;
 			type="Land_HelipadEmpty_F";
-			atlOffset=30.493196;
+			atlOffset=0.00029754639;
 		};
 		class Item209
 		{
@@ -8841,7 +8841,7 @@ class Mission
 			};
 			id=2062;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.0091915131;
+			atlOffset=0.0094909668;
 		};
 		class Item210
 		{
@@ -8920,18 +8920,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3202.4902,0,12764.083};
+				position[]={3202.49,-0.00013446808,12764.083};
 				angles[]={0,1.5707964,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				name="carriersix";
 				createAsLocalObject=1;
 				disableSimulation=1;
 			};
 			id=2065;
 			type="Land_Carrier_01_base_F";
-			atlOffset=13.799091;
+			atlOffset=13.799001;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9143,7 +9144,7 @@ class Mission
 			};
 			id=2071;
 			type="Land_HelipadEmpty_F";
-			atlOffset=0.015327454;
+			atlOffset=0.015460968;
 		};
 		class Item219
 		{
@@ -9158,7 +9159,7 @@ class Mission
 			};
 			id=2073;
 			type="Land_HelipadEmpty_F";
-			atlOffset=32.386814;
+			atlOffset=6.4849854e-005;
 		};
 		class Item220
 		{

@@ -398,13 +398,15 @@ OWL_fnc_crAircraftSpawn = {
 		{
 			case 6: 
 			{
+				//get carrier loc for each parking spot waiting on 2.14
+				// 2.14 syntax obj1 getRelPos obj2
+				_carrierASLz = (getPosASL carriersix) select 2;
 				_casesixparking = [[3324.47,12735.6,28.1], [3274.39,12790.3,27.5], [3190.32,12795.6,35.2]];
 				_parkingrandom = random 2;  
 				_planePos = _casesixparking select _parkingrandom; //TODO: add at least one more parking spots or check if aircraft is there before spawning
-				_planeDir = 200; //TODO: Grab carrier direction and set _planeDir to 90 degree offset or towards center of carrier
 				_aircraft = createVehicle [_asset, _planePos, [], 0, "NONE"]; 
 				_aircraft setPosATL _planePos;   
-				_aircraft setDir _planeDir;   
+				_aircraft setDir (_aircraft getRelDir carriersix);   
 								  
 				_aircraft remoteExec ["OWL_fnc_srAircraftSpawn", _client];
 				[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
@@ -415,10 +417,9 @@ OWL_fnc_crAircraftSpawn = {
 				_casesevenparking = [[2645,21943.2,26.1], [2568.8,21930.7,28.4], [2529.25,21857.6,35]]; 
 				_parkingrandom = random 2;
 				_planePos = _casesevenparking select _parkingrandom; //TODO: add at least one more parking spots or check if aircraft is there before spawning
-				_planeDir = 140; //TODO: Grab carrier direction and set _planeDir to 90 degree offset or towards center of carrier
 				_aircraft = createVehicle [_asset, _planePos, [], 0, "NONE"]; 
 				_aircraft setPosATL _planePos;   
-				_aircraft setDir _planeDir;   
+				_aircraft setDir (_aircraft getRelDir carrierseven);   
 								  
 				_aircraft remoteExec ["OWL_fnc_srAircraftSpawn", _client];
 				[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;
@@ -429,10 +430,9 @@ OWL_fnc_crAircraftSpawn = {
 				_caseeightparking = [[16150,5261.82,207.1], [16075,5252.64,205.5], [16032.4,5178.8,200]]; 
 				_parkingrandom = random 2;
 				_planePos = _caseeightparking select _parkingrandom; //TODO: add at least one more parking spots or check if aircraft is there before spawning
-				_planeDir = 140; //TODO: Grab carrier direction and set _planeDir to 90 degree offset or towards center of carrier
 				_aircraft = createVehicle [_asset, _planePos, [], 0, "NONE"]; 
 				_aircraft setPosATL _planePos;   
-				_aircraft setDir _planeDir;   
+				_aircraft setDir (_aircraft getRelDir carriereight);   
 								  
 				_aircraft remoteExec ["OWL_fnc_srAircraftSpawn", _client];
 				[_client, [_aircraft], []] call OWL_fnc_completeAssetPurchase;

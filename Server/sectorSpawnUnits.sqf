@@ -20,7 +20,8 @@ switch (_serverdiscord) do
 	};
 
 };
-systemChat format ["Current mission is %1 on server %2 ,  **Discord is %3**", missionName, serverName, _serverdiscord ];
+_infotext = format ["Current mission is %1 server: %2 map: %3 ,  **Discord %4**", missionName, serverName, worldName, _serverdiscord];
+[_infotext] remoteExec ["systemChat"];
 diag_log format ["Current mission is %1 on server %2", missionName, serverName];
 
 OWL_genericSquad = [

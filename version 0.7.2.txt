@@ -64,3 +64,5 @@
 - Added Dynamic MOTD system that displays mission, server, map, and server discord(based on server its running on)
   - this is to help with bug reporting across the 30 map/mission combos in the Open Warlords project
 - Improved Dynamic info logging to help Admins know which map/mission an error is occurring on 
+- Refactored Fixed wing aircraft carrier spawning code to run faster and spawn aircraft safer. 
+   -- This is a WIP system.

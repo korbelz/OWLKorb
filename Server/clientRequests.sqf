@@ -398,22 +398,15 @@ OWL_fnc_crAircraftSpawn = {
 		{
 			case 6: 
 			{
-				//get carrier loc for each parking spot waiting on 2.14
-				// 2.14 syntax obj1 getRelPos obj2
-				_carrierASLz = (getPosWorld carriersix) select 2;
-				_carrierdeck = 35.4; 
-				_carrierparkone = carriersix getRelPos [45, 45];
-				_carrierparkone set [2, (_carrierASLz + _carrierdeck)]; //hacky way to set ASL z axis of carrier deck
-				_carrierparktwo = carriersix getRelPos [45, 145];
-				_carrierparktwo set [2, (_carrierASLz + _carrierdeck)];
-				_carrierparkthree = carriersix getRelPos [80, 200];
-				_carrierparkthree set [2, (_carrierASLz + _carrierdeck)];
-				_carrierparkfour = carriersix getRelPos [70, 15];
-				_carrierparkfour set [2, (_carrierASLz + _carrierdeck)];
+				_carrierdeck = 36;				
+				_carrierparkone = carriersix modelToWorld[20,0,_carrierdeck];
+				_carrierparktwo = carriersix modelToWorld[0,50,_carrierdeck];
+				_carrierparkthree = carriersix modelToWorld[-20,0,_carrierdeck];
+				_carrierparkfour = carriersix modelToWorld[0,-50,_carrierdeck];
+				
 				_casesixparking = [_carrierparkone, _carrierparktwo, _carrierparkthree, _carrierparkfour];
 				_parkingrandom = random 3;  
 				_planePos = _casesixparking select _parkingrandom;
-				_planePos remoteExec ["systemChat"]; 
 				_aircraft = createVehicle [_asset, _planePos, [], 0, "NONE"]; 
 				_aircraft setPosATL _planePos;   
 				_aircraft setDir (_aircraft getRelDir carriersix);   
@@ -424,16 +417,11 @@ OWL_fnc_crAircraftSpawn = {
 
 			case 7:
 			{
-				_carrierASLz = (getPosWorld carrierseven) select 2;
-				_carrierdeck = 35.4; 
-				_carrierparkone = carrierseven getRelPos [45, 45];
-				_carrierparkone set [2, (_carrierASLz + _carrierdeck)]; //hacky way to set ASL z axis of carrier deck
-				_carrierparktwo = carrierseven getRelPos [45, 145];
-				_carrierparktwo set [2, (_carrierASLz + _carrierdeck)];
-				_carrierparkthree = carrierseven getRelPos [80, 200];
-				_carrierparkthree set [2, (_carrierASLz + _carrierdeck)];
-				_carrierparkfour = carrierseven getRelPos [70, 15];
-				_carrierparkfour set [2, (_carrierASLz + _carrierdeck)];
+				_carrierdeck = 36;				
+				_carrierparkone = carrierseven modelToWorld[20,0,_carrierdeck];
+				_carrierparktwo = carrierseven modelToWorld[0,50,_carrierdeck];
+				_carrierparkthree = carrierseven modelToWorld[-20,0,_carrierdeck];
+				_carrierparkfour = carrierseven modelToWorld[0,-50,_carrierdeck];
 				_casesevenparking = [_carrierparkone, _carrierparktwo, _carrierparkthree, _carrierparkfour];
 				_parkingrandom = random 3;  
 				_planePos = _casesevenparking select _parkingrandom;
@@ -447,16 +435,11 @@ OWL_fnc_crAircraftSpawn = {
 
 			case 8:
 			{
-				_carrierASLz = (getPosWorld carriereight) select 2;
-				_carrierdeck = 35.4; 
-				_carrierparkone = carriereight getRelPos [45, 45];
-				_carrierparkone set [2, (_carrierASLz + _carrierdeck)]; //hacky way to set ASL z axis of carrier deck
-				_carrierparktwo = carriereight getRelPos [45, 145];
-				_carrierparktwo set [2, (_carrierASLz + _carrierdeck)];
-				_carrierparkthree = carriereight getRelPos [80, 200];
-				_carrierparkthree set [2, (_carrierASLz + _carrierdeck)];
-				_carrierparkfour = carriereight getRelPos [70, 15];
-				_carrierparkfour set [2, (_carrierASLz + _carrierdeck)];
+				_carrierdeck = 36;				
+				_carrierparkone = carriereight modelToWorld[20,0,_carrierdeck];
+				_carrierparktwo = carriereight modelToWorld[0,50,_carrierdeck];
+				_carrierparkthree = carriereight modelToWorld[-20,0,_carrierdeck];
+				_carrierparkfour = carriereight modelToWorld[0,-50,_carrierdeck];
 				_caseeightparking = [_carrierparkone, _carrierparktwo, _carrierparkthree, _carrierparkfour];
 				_parkingrandom = random 3;  
 				_planePos = _caseeightparking select _parkingrandom;

@@ -58,3 +58,6 @@
 - Fixed wing aircraft now spawn facing the center of the aircraft carrier
 - Fixed wing aircraft spawning is map agnostic, parking spots are picked in relation to the carrier object
   -- this is a WIP system
+
+0.7.2
+- Minor Improvements to the following loadouts: Squad Leader, Engineer, Anti-Air, Heavy AT, and Sniper.

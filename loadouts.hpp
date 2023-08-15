@@ -63,6 +63,7 @@ class CfgRespawnInventory
 			"HandGrenade"
 		};
 		items[] = { // Useable items
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -78,6 +79,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_B_CombatUniform_mcam_vest";
+		backpack = "B_TacticalPack_mcamo";
 	};
 	
 	class O_SquadLeader
@@ -108,6 +110,7 @@ class CfgRespawnInventory
 			"HandGrenade"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -123,6 +126,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_O_CombatUniform_ocamo";
+		backpack = "B_TacticalPack_ocamo";
 	};
 	
 	class B_Medic
@@ -151,7 +155,8 @@ class CfgRespawnInventory
 			"30Rnd_65x39_caseless_mag"
 		};
 		items[] = { // Useable items
-			"Medkit"
+			"FirstAidKit",
+			"FirstAidKit"
 		};
 		linkedItems[] = {
 			"V_PlateCarrierGL_rgr",
@@ -195,7 +200,8 @@ class CfgRespawnInventory
 			"30Rnd_65x39_caseless_green"
 		};
 		items[] = {
-			"Medikit"
+			"FirstAidKit",
+			"FirstAidKit"
 		};
 		linkedItems[] = {
 			"V_TacVest_khk",
@@ -237,11 +243,12 @@ class CfgRespawnInventory
 		};
 		items[] = { // Useable items
 			"FirstAidKit",
+			"FirstAidKit",
 			"ToolKit",
 			"MineDetector"
 		};
 		linkedItems[] = {
-			"V_Chestrig_rgr",
+			"V_PlateCarrierGL_rgr",
 			"H_HelmetB_desert",
 			"optic_Hamr",
 			"acc_pointer_IR",
@@ -253,7 +260,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_B_CombatUniform_mcam_vest";
-		backpack = "B_Kitbag_mcamo_Eng";
+		backpack = "B_TacticalPack_mcamo";
 	};
 	
 	class O_Engineer
@@ -282,11 +289,12 @@ class CfgRespawnInventory
 		};
 		items[] = {
 			"FirstAidKit",
+			"FirstAidKit",
 			"ToolKit",
 			"MineDetector"
 		};
 		linkedItems[] = {
-			"V_HarnessO_brn",
+			"V_TacVest_khk",
 			"H_HelmetLeaderO_ocamo",
 			"optic_Arco_blk_F",
 			"acc_pointer_IR",
@@ -298,7 +306,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_O_CombatUniform_ocamo";
-		backpack = "B_Carryall_ocamo_Eng";
+		backpack = "B_TacticalPack_ocamo";
 	};
 	
 	class B_AT
@@ -326,10 +334,11 @@ class CfgRespawnInventory
 			"MRAWS_HE_F"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
-			"V_PlateCarrier2_rgr",
+			"V_PlateCarrierGL_rgr",
 			"H_HelmetB_sand",
 			"optic_Hamr",
 			"acc_pointer_IR",
@@ -371,6 +380,7 @@ class CfgRespawnInventory
 			"RPG32_HE_F"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -414,10 +424,11 @@ class CfgRespawnInventory
 			"Titan_AA"
 		};
 		items[] = { // Useable items
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
-			"V_PlateCarrier2_rgr",
+			"V_PlateCarrierGL_rgr",
 			"H_HelmetB_sand",
 			"optic_Hamr",
 			"acc_pointer_IR",
@@ -459,6 +470,7 @@ class CfgRespawnInventory
 			"Titan_AA"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -496,6 +508,7 @@ class CfgRespawnInventory
 			"20Rnd_556x45_UW_mag"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -533,6 +546,7 @@ class CfgRespawnInventory
 			"20Rnd_556x45_UW_mag"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -548,7 +562,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_O_Wetsuit";
-		backpack = "B_FieldPack_ocamo";
+		backpack = "B_AssaultPack_ocamo";
 	};
 
 	class B_HAT
@@ -559,7 +573,7 @@ class CfgRespawnInventory
 		weapons[] = {
 			"arifle_MX_F",
 			"Binocular",
-			"launch_I_Titan_short_F",
+			"launch_B_Titan_short_F",
 			"hgun_P07_F"
 		};
 		magazines[] = {
@@ -578,10 +592,11 @@ class CfgRespawnInventory
 			
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
-			"V_PlateCarrier2_rgr",
+			"V_PlateCarrierGL_rgr",
 			"H_HelmetB_sand",
 			"optic_Hamr",
 			"acc_pointer_IR",
@@ -593,7 +608,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_B_CombatUniform_mcam";
-		backpack = "B_FieldPack_khk";
+		backpack = "B_TacticalPack_mcamo";
 	};
 	
 	class O_HAT
@@ -604,7 +619,7 @@ class CfgRespawnInventory
 		weapons[] = {
 			"arifle_Katiba_F",
 			"Binocular",
-			"launch_B_Titan_short_F",
+			"launch_O_Titan_short_F",
 			"hgun_Rook40_F"
 		};
 		magazines[] = {
@@ -624,6 +639,7 @@ class CfgRespawnInventory
 			"Titan_AT"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -639,7 +655,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_O_CombatUniform_ocamo";
-		backpack = "B_FieldPack_cbr";
+		backpack = "B_TacticalPack_ocamo";
 	};
 
 	class B_Sniper // Class of the respawn inventory, used by BIS_fnc_addRespawnInventory
@@ -671,6 +687,7 @@ class CfgRespawnInventory
 			"HandGrenade"
 		};
 		items[] = { // Useable items
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -686,7 +703,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_B_FullGhillie_ard";
-		backpack = "B_FieldPack_khk";
+		backpack = "B_TacticalPack_mcamo";
 	};
 	
 	class O_Sniper
@@ -718,6 +735,7 @@ class CfgRespawnInventory
 			"HandGrenade"
 		};
 		items[] = {
+			"FirstAidKit",
 			"FirstAidKit"
 		};
 		linkedItems[] = {
@@ -733,7 +751,7 @@ class CfgRespawnInventory
 			"ItemRadio"
 		};
 		uniformClass = "U_O_FullGhillie_ard";
-		backpack = "B_FieldPack_cbr";
+		backpack = "B_TacticalPack_ocamo";
 	};
 };
 

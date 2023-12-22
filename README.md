@@ -1,6 +1,6 @@
 ![This is an image](https://github.com/korbelz/OWLKorb/blob/main/Open_warlords_template.png)
 
-![This is an image](https://github.com/korbelz/OWLKorb/issues) ![This is an image](https://img.shields.io/github/forks/korbelz/OWL)  ![This is an image](https://img.shields.io/github/stars/korbelz/OWL) 	![This is an image](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkorbelz%2FOWL)
+![This is an image](https://img.shields.io/github/forks/korbelz//OWLKorb/issues) ![This is an image](https://img.shields.io/github/forks/korbelz/OWLKorb)  ![This is an image](https://img.shields.io/github/stars/korbelz/OWLKorb) 	![This is an image](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkorbelz%2FOWL)
 
 # OPEN WARLORDS
 

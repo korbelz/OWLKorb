@@ -66,3 +66,6 @@
 - Improved Dynamic info logging to help Admins know which map/mission an error is occurring on 
 - Refactored Fixed wing aircraft carrier spawning code to run faster and spawn aircraft safer. 
    -- This is a WIP system.
+
+0.7.3
+- Made Dynamic markers easier to read

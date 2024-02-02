@@ -69,3 +69,4 @@
 
 0.7.3
 - Made Dynamic markers easier to read
+- added extra logging to help admins

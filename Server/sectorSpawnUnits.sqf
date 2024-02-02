@@ -6,13 +6,20 @@ params ["_sector"];
 
 // TODO: Put these into config .hpp files + create for alternate side compositions
 
-//add server discord to this list to have it auto populate
+
+/*
+diag_log in this section is to help admins see which map/mission is being played via the console 
+It also includes a player list and current server FPS is help spot issues. 
+*/ 
 _serverdiscord = serverName; 
+private _bluforPlayers = west countSide allPlayers;
+private _opforPlayers = east countSide allPlayers;
+//varfps = server FPS 
 switch (_serverdiscord) do
 { 
 	case "Open Warlords":
 	{
-    	_serverdiscord = "https://discord.gg/SBGrYUpvba"; 
+    	_serverdiscord = "https://discord.gg/DQjYRMvv"; 
 	};
 	case default 
 	{
@@ -20,9 +27,14 @@ switch (_serverdiscord) do
 	};
 
 };
-_infotext = format ["Current mission is %1 server: %2 map: %3 ,  **Discord %4**", missionName, serverName, worldName, _serverdiscord];
-[_infotext] remoteExec ["systemChat"];
-diag_log format ["Current mission is %1 server: %2 map: %3", missionName, serverName, worldName];
+systemChat format ["Current mission is %1 on server %2 ,  **Discord is %3**", missionName, serverName, _serverdiscord ];
+diag_log format ["Current mission is %1 on server %2, world is: %3", missionName, serverName, worldName];
+diag_log format ["Current playlist is bluefor: %1 Opfor: %2", _bluforPlayers, _opforPlayers];
+diag_log format ["Current diag_fps: %1", diag_fps];
+diag_log format ["Current activeScripts[spawned, execVMed, execed, execFSM]: %1", diag_activeScripts];
+//diag_log format ["Current active SQF scripts: %1", diag_activeSQFScripts];
+serverCommand "#monitor 360"; //doesn't work?
+serverCommand "#monitords 360"; //doesn't work?
 
 OWL_genericSquad = [
 	"I_Soldier_LAT2_F",
